@@ -1,53 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kristie McKenzie-Church</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>1800 PAR-TIES | Party Rentals in Birmingham, AL</title>
+  <meta name="description" content="1800 PAR-TIES offers party equipment & décor rentals in Birmingham, Alabama and surrounding areas. Stylish packages for birthdays, girls’ nights, and special events." />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Kristie McKenzie-Church</h1>
-    <p>Web Design Student · Creative Thinker · Builder</p>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <p>Serving Birmingham, Alabama & Surrounding Areas</p>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-name">1800 PAR-TIES</span>
+        <span class="brand-sub">Party Equipment & Décor Rentals</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="services.html">Rentals</a>
+        <a class="nav-link" href="media.html">Media</a>
+        <a class="nav-link" href="proposal.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Stylish Party Rentals Made Easy</h1>
+        <p class="lead">
+          From tables and chairs to themed décor packages, <strong>1800 PAR-TIES</strong> helps you host beautiful events without the stress.
+        </p>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I’m a web design student focused on building clean, accessible,
-        and user-friendly websites. This site is hosted using GitHub Pages
-        as part of my professional portfolio.
-      </p>
-    </section>
+        <ul class="hero-bullets">
+          <li>Equipment Rentals: tents, tables, chairs, décor</li>
+          <li>Curated Packages: girls’ night, glamping, jazz night</li>
+          <li>Local & Reliable service for Birmingham-area events</li>
+        </ul>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>1800 PAR-TIES – Event Rental Website</li>
-        <li>Personal Portfolio Website</li>
-        <li>Course Web Assignments</li>
-      </ul>
-    </section>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="services.html">View Rentals & Packages</a>
+          <a class="btn btn-outline" href="contact.html">Request a Quote</a>
+        </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: yourname@email.com</p>
-    </section>
-  </main>
+        <p class="micro">Fast responses • Flexible packages • Budget-friendly options</p>
+      </div>
 
-  <footer>
-    <p>© 2025 Kristie McKenzie-Church</p>
+      <div class="hero-card">
+        <h2>Popular Packages</h2>
+        <div class="mini-cards">
+          <div class="mini-card">
+            <h3>Ladies Night Glamping</h3>
+            <p>Cozy setup for a stylish night in.</p>
+            <span class="tag">$300+</span>
+          </div>
+          <div class="mini-card">
+            <h3>Hanging with the Homies</h3>
+            <p>Fun seating + vibe décor.</p>
+            <span class="tag">$175+</span>
+          </div>
+          <div class="mini-card">
+            <h3>Jazz Night</h3>
+            <p>Elegant décor with a classic feel.</p>
+            <span class="tag">$250+</span>
+          </div>
+        </div>
+        <a class="text-link" href="services.html">See all packages →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">What We Offer</h2>
+      <p class="section-subtitle">Mix and match rentals or choose a full package—we’ll help you build the perfect setup.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Equipment Rentals</h3>
+          <p>Tents, tables, chairs, and essentials to build your event space.</p>
+        </article>
+
+        <article class="card">
+          <h3>Décor & Styling</h3>
+          <p>Backdrops, accent décor, table styling, and themed touches.</p>
+        </article>
+
+        <article class="card">
+          <h3>Specialty Packages</h3>
+          <p>Curated experiences like glamping nights, girls’ night, and more.</p>
+        </article>
+
+        <article class="card">
+          <h3>Setup Support</h3>
+          <p>Optional assistance for arranging rentals and bringing the vision together.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section alt">
+    <div class="container">
+      <h2 class="section-title">Why 1800 PAR-TIES</h2>
+
+      <div class="why-grid">
+        <div class="why">
+          <h3>Affordable + Stylish</h3>
+          <p>We focus on making your event look high-end while staying budget-friendly.</p>
+        </div>
+        <div class="why">
+          <h3>Local & Reliable</h3>
+          <p>Serving Birmingham and nearby areas with dependable communication and service.</p>
+        </div>
+        <div class="why">
+          <h3>Curated Themes</h3>
+          <p>We offer packages and add-ons that make planning simple and fun.</p>
+        </div>
+      </div>
+
+      <div class="center">
+        <a class="btn btn-primary" href="contact.html">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-brand">1800 PAR-TIES</h3>
+        <p>Party Equipment & Décor Rentals</p>
+        <p class="micro">Serving Birmingham, Alabama & Surrounding Areas</p>
+      </div>
+
+      <div>
+        <h4>Pages</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Rentals</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="proposal.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p class="micro">Add your business email + phone here.</p>
+        <p class="micro">Example: hello@1800parties.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> 1800 PAR-TIES. All Rights Reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
