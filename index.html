@@ -3,169 +3,172 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>1800 PAR-TIES | Party Rentals in Birmingham, AL</title>
-  <meta name="description" content="1800 PAR-TIES offers party equipment & décor rentals in Birmingham, Alabama and surrounding areas. Stylish packages for birthdays, girls’ nights, and special events." />
-
-  <!-- Main CSS -->
+  <title>1800 PAR-TIES | Party Rentals | Birmingham, AL</title>
+  <meta name="description" content="1800 PAR-TIES provides party equipment & decor rentals in Birmingham, Alabama and surrounding areas. Tents, tables, chairs, decor, and themed packages." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <!-- Top Bar -->
-  <div class="topbar">
-    <p>Serving Birmingham, Alabama & Surrounding Areas</p>
-  </div>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Navigation -->
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">
-        <span class="brand-name">1800 PAR-TIES</span>
-        <span class="brand-sub">Party Equipment & Décor Rentals</span>
-      </a>
+    <div class="container header-inner">
+      <div class="brand">
+        <a class="brand__logo" href="index.html" aria-label="1800 PAR-TIES Home">
+          <span class="brand__name">1800 PAR-TIES</span>
+          <span class="brand__tag">Party Equipment & Décor Rentals</span>
+        </a>
+      </div>
 
-      <nav class="nav">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="services.html">Rentals</a>
-        <a class="nav-link" href="media.html">Media</a>
-        <a class="nav-link" href="proposal.html">About</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="index.html" aria-current="page">Home</a>
+        <a class="nav__link" href="services.html">Rentals</a>
+        <a class="nav__link" href="packages.html">Packages</a>
+        <a class="nav__link" href="contact.html">Contact</a>
       </nav>
+
+      <a class="btn btn--gold header-cta" href="contact.html">Request a Quote</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1>Stylish Party Rentals Made Easy</h1>
-        <p class="lead">
-          From tables and chairs to themed décor packages, <strong>1800 PAR-TIES</strong> helps you host beautiful events without the stress.
-        </p>
-
-        <ul class="hero-bullets">
-          <li>Equipment Rentals: tents, tables, chairs, décor</li>
-          <li>Curated Packages: girls’ night, glamping, jazz night</li>
-          <li>Local & Reliable service for Birmingham-area events</li>
-        </ul>
-
-        <div class="cta-row">
-          <a class="btn btn-primary" href="services.html">View Rentals & Packages</a>
-          <a class="btn btn-outline" href="contact.html">Request a Quote</a>
-        </div>
-
-        <p class="micro">Fast responses • Flexible packages • Budget-friendly options</p>
-      </div>
-
-      <div class="hero-card">
-        <h2>Popular Packages</h2>
-        <div class="mini-cards">
-          <div class="mini-card">
-            <h3>Ladies Night Glamping</h3>
-            <p>Cozy setup for a stylish night in.</p>
-            <span class="tag">$300+</span>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Serving Birmingham, Alabama & Surrounding Areas</p>
+          <h1>Make your event look expensive — without the expensive price tag.</h1>
+          <p class="lead">
+            Rentals + décor + themed packages for birthdays, showers, graduations, corporate events, and more.
+            Easy booking. Beautiful setups. Reliable delivery.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn--gold" href="services.html">Browse Rentals</a>
+            <a class="btn btn--outline" href="packages.html">View Packages</a>
           </div>
-          <div class="mini-card">
-            <h3>Hanging with the Homies</h3>
-            <p>Fun seating + vibe décor.</p>
-            <span class="tag">$175+</span>
-          </div>
-          <div class="mini-card">
-            <h3>Jazz Night</h3>
-            <p>Elegant décor with a classic feel.</p>
-            <span class="tag">$250+</span>
-          </div>
+          <ul class="trust">
+            <li>✨ Curated themes</li>
+            <li>🚚 Delivery & setup options</li>
+            <li>📍 Local, Birmingham-based service</li>
+          </ul>
         </div>
-        <a class="text-link" href="services.html">See all packages →</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Services Preview -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">What We Offer</h2>
-      <p class="section-subtitle">Mix and match rentals or choose a full package—we’ll help you build the perfect setup.</p>
+        <div class="hero-card" role="region" aria-label="Quick Quote Card">
+          <h2 class="card-title">Quick Quote</h2>
+          <p class="card-text">Tell us your date, location, and what you need — we’ll respond ASAP.</p>
 
-      <div class="cards">
-        <article class="card">
-          <h3>Equipment Rentals</h3>
-          <p>Tents, tables, chairs, and essentials to build your event space.</p>
-        </article>
+          <form class="mini-form" action="mailto:yourname@email.com" method="post" enctype="text/plain">
+            <label class="field">
+              <span class="field__label">Your Name</span>
+              <input class="field__input" type="text" name="name" required />
+            </label>
 
-        <article class="card">
-          <h3>Décor & Styling</h3>
-          <p>Backdrops, accent décor, table styling, and themed touches.</p>
-        </article>
+            <label class="field">
+              <span class="field__label">Email</span>
+              <input class="field__input" type="email" name="email" required />
+            </label>
 
-        <article class="card">
-          <h3>Specialty Packages</h3>
-          <p>Curated experiences like glamping nights, girls’ night, and more.</p>
-        </article>
+            <label class="field">
+              <span class="field__label">Event Date</span>
+              <input class="field__input" type="date" name="date" />
+            </label>
 
-        <article class="card">
-          <h3>Setup Support</h3>
-          <p>Optional assistance for arranging rentals and bringing the vision together.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+            <label class="field">
+              <span class="field__label">What are you planning?</span>
+              <input class="field__input" type="text" name="event_type" placeholder="Birthday, shower, graduation…" />
+            </label>
 
-  <!-- Why Us -->
-  <section class="section alt">
-    <div class="container">
-      <h2 class="section-title">Why 1800 PAR-TIES</h2>
-
-      <div class="why-grid">
-        <div class="why">
-          <h3>Affordable + Stylish</h3>
-          <p>We focus on making your event look high-end while staying budget-friendly.</p>
-        </div>
-        <div class="why">
-          <h3>Local & Reliable</h3>
-          <p>Serving Birmingham and nearby areas with dependable communication and service.</p>
-        </div>
-        <div class="why">
-          <h3>Curated Themes</h3>
-          <p>We offer packages and add-ons that make planning simple and fun.</p>
+            <button class="btn btn--green" type="submit">Send Request</button>
+            <p class="fineprint">
+              Prefer text? Add your phone in the Contact page and we’ll follow up.
+            </p>
+          </form>
         </div>
       </div>
+    </section>
 
-      <div class="center">
-        <a class="btn btn-primary" href="contact.html">Get a Quote</a>
+    <!-- FEATURED -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">What we rent</h2>
+        <p class="section-subtitle">Popular essentials + statement pieces that bring your theme to life.</p>
+
+        <div class="grid cards">
+          <article class="card">
+            <h3>Tents & Canopies</h3>
+            <p>Outdoor coverage for comfort and style — perfect for backyards and venues.</p>
+            <a class="text-link" href="services.html#tents">See tent options →</a>
+          </article>
+
+          <article class="card">
+            <h3>Tables & Chairs</h3>
+            <p>Seating and table setups for gatherings of all sizes — from intimate to large.</p>
+            <a class="text-link" href="services.html#tables-chairs">Browse seating →</a>
+          </article>
+
+          <article class="card">
+            <h3>Décor & Backdrops</h3>
+            <p>Photo moments, balloon styling, and décor accents that elevate the whole event.</p>
+            <a class="text-link" href="services.html#decor">Explore décor →</a>
+          </article>
+
+          <article class="card">
+            <h3>Specialty Packages</h3>
+            <p>Ready-made themes like Ladies Night Glamping, Jazz Night, and more.</p>
+            <a class="text-link" href="packages.html">View packages →</a>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+    <!-- WHY US -->
+    <section class="section section--alt">
+      <div class="container split">
+        <div>
+          <h2 class="section-title">Why 1800 PAR-TIES?</h2>
+          <p class="section-subtitle">
+            We’re built for people who want a beautiful event without stress.
+          </p>
+          <ul class="bullets">
+            <li><strong>Budget-friendly:</strong> stylish setups at realistic prices.</li>
+            <li><strong>Fast + responsive:</strong> easy communication and simple booking.</li>
+            <li><strong>Reliable:</strong> on-time delivery and clear expectations.</li>
+            <li><strong>Creative:</strong> themes and add-ons to match your vibe.</li>
+          </ul>
+          <a class="btn btn--gold" href="contact.html">Get a quote</a>
+        </div>
+
+        <div class="highlight">
+          <h3>Coming soon</h3>
+          <p>
+            A full gallery and videos of real setups. For now, check the Packages page to see our featured themes.
+          </p>
+          <a class="btn btn--outline" href="packages.html">Explore themes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+      <div class="container cta-inner">
+        <h2>Ready to plan your next event?</h2>
+        <p>Send your date + location and we’ll recommend rentals or a package that fits your budget.</p>
+        <div class="cta-actions">
+          <a class="btn btn--green" href="contact.html">Request a Quote</a>
+          <a class="btn btn--outline" href="services.html">Browse Rentals</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3 class="footer-brand">1800 PAR-TIES</h3>
-        <p>Party Equipment & Décor Rentals</p>
-        <p class="micro">Serving Birmingham, Alabama & Surrounding Areas</p>
-      </div>
-
-      <div>
-        <h4>Pages</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Rentals</a></li>
-          <li><a href="media.html">Media</a></li>
-          <li><a href="proposal.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contact</h4>
-        <p class="micro">Add your business email + phone here.</p>
-        <p class="micro">Example: hello@1800parties.com</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> 1800 PAR-TIES. All Rights Reserved.</p>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> 1800 PAR-TIES • Serving Birmingham, Alabama & Surrounding Areas</p>
+      <p class="footer-links">
+        <a href="contact.html">Contact</a> ·
+        <a href="services.html">Rentals</a> ·
+        <a href="packages.html">Packages</a>
+      </p>
     </div>
   </footer>
 
