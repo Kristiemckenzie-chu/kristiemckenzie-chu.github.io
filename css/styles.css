@@ -179,6 +179,30 @@ a:active {
   background-color: var(--green);
   margin: 2.5rem 0;
 }
+.service-images {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.service-images img {
+  width: 100%;
+  max-width: 50%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Stack images on small screens */
+@media (max-width: 600px) {
+  .service-images {
+    flex-direction: column;
+  }
+
+  .service-images img {
+    max-width: 100%;
+  }
+}
+
 
 
 
