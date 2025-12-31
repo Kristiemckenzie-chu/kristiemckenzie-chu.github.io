@@ -146,5 +146,28 @@ footer{
 @media (max-width: 600px){
   .grid{ grid-template-columns: 1fr; }
 }
+/* =========================
+   LINK COLORS (REMOVE PURPLE)
+   ========================= */
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--white);
+}
+
+a:hover,
+a:focus {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--gold);
+}
+
 
 
