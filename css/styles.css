@@ -168,6 +168,18 @@ a:focus {
 a:active {
   color: var(--gold);
 }
+/* ============================= */
+/* Section Dividers – Hunter Green */
+/* ============================= */
+
+.section-divider {
+  border: none;
+  height: 4px;
+  width: 80px;
+  background-color: var(--green);
+  margin: 2.5rem 0;
+}
+
 
 
 
