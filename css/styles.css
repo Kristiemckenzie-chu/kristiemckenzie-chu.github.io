@@ -202,6 +202,17 @@ a:active {
     max-width: 100%;
   }
 }
+.image-pair{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.image-pair img{
+  width: 100%;
+  border-radius: 8px;
+}
+
 
 
 
