@@ -11,6 +11,7 @@
 }
 
 *{ box-sizing:border-box; }
+
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -26,10 +27,12 @@ body{
   padding: 22px 16px 14px;
   border-bottom: 4px solid var(--gold);
 }
+
 .site-header h1{
   margin:0 0 6px;
   letter-spacing:.5px;
 }
+
 .tagline{
   margin:0;
   color: #d7e2dc;
@@ -44,6 +47,7 @@ body{
   flex-wrap:wrap;
   align-items:center;
 }
+
 .main-nav a{
   color: var(--white);
   text-decoration:none;
@@ -51,10 +55,12 @@ body{
   border-radius: 10px;
   border: 1px solid transparent;
 }
+
 .main-nav a:hover{
   border-color: var(--gold);
   color: var(--gold);
 }
+
 .main-nav a.active{
   background: var(--green);
   border-color: var(--gold);
@@ -67,10 +73,12 @@ body{
   margin: 0 auto;
   padding: 22px 16px 40px;
 }
+
 .section-title{
   color: var(--green);
   margin-top: 0;
 }
+
 .accent{
   height: 4px;
   width: 100px;
@@ -79,47 +87,18 @@ body{
   margin: 10px 0 18px;
 }
 
-/* Cards / grid */
-.grid{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-.card{
-  background: var(--white);
-  border: 1px solid #e6e6e6;
-  border-top: 5px solid var(--gold);
-  border-radius: 14px;
-  overflow:hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,.06);
-}
-.card img{
-  width:100%;
-  height: 220px;
-  object-fit: cover;
-  display:block;
-}
-.card-body{
-  padding: 14px 14px 16px;
-}
-.card h3{
-  margin: 0 0 8px;
-  color: var(--green);
-}
-.card p{
-  margin: 0 0 10px;
-}
-.price{
-  display:inline-block;
-  background: var(--green);
-  color: var(--white);
-  padding: 6px 10px;
+/* Optional hunter-green divider for sections
+   Use in HTML: <hr class="section-divider"> */
+.section-divider{
+  border: none;
+  height: 4px;
+  width: 120px;
+  background-color: var(--green);
+  margin: 2rem 0;
   border-radius: 999px;
-  font-weight: 600;
-  border: 1px solid var(--gold);
 }
 
-/* Buttons (optional) */
+/* Buttons */
 .btn{
   display:inline-block;
   background: var(--gold);
@@ -129,8 +108,10 @@ body{
   border-radius: 12px;
   font-weight: 700;
 }
+
 .btn:hover{ filter: brightness(0.95); }
 
+/* Footer */
 footer{
   border-top: 2px solid var(--gold);
   margin-top: 30px;
@@ -139,113 +120,116 @@ footer{
   font-size:.9rem;
 }
 
-/* Responsive */
-@media (max-width: 900px){
-  .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 600px){
-  .grid{ grid-template-columns: 1fr; }
-}
 /* =========================
-   LINK COLORS (REMOVE PURPLE)
+   GLOBAL LINK COLORS
+   (removes purple + stays branded)
    ========================= */
-
-a {
-  color: var(--white);
+a{
+  color: var(--gold);
   text-decoration: none;
 }
 
-a:visited {
-  color: var(--white);
+a:visited{
+  color: var(--gold);
 }
 
 a:hover,
-a:focus {
-  color: var(--gold);
+a:focus{
+  color: var(--green);
   text-decoration: underline;
 }
 
-a:active {
+a:active{
+  color: var(--green);
+}
+
+/* Keep nav links white (override global links) */
+.main-nav a,
+.main-nav a:visited{
+  color: var(--white);
+}
+
+.main-nav a:hover,
+.main-nav a:focus{
   color: var(--gold);
 }
-/* ============================= */
-/* Section Dividers – Hunter Green */
-/* ============================= */
 
-.section-divider {
-  border: none;
-  height: 4px;
-  width: 80px;
-  background-color: var(--green);
-  margin: 2.5rem 0;
-}
-/* Stack images on small screens */
-@media (max-width: 600px) {
-  .service-images {
-    flex-direction: column;
-  }
+/* =========================
+   SERVICES / CARDS
+   ========================= */
 
-  }
-.image-pair{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+/* If you use <section class="services-grid"> in HTML */
+.services-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
 }
 
-.image-pair img{
+/* If your services are <article class="service-card"> */
+.service-card{
+  background: var(--white);
+  border: 1px solid #e6e6e6;
+  border-top: 5px solid var(--gold);
+  border-radius: 14px;
+  overflow:hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  padding: 14px;
+}
+
+/* Headings inside cards */
+.service-card h3{
+  margin: 0 0 8px;
+  color: var(--green);
+}
+
+.service-card p{
+  margin: 0 0 10px;
+}
+
+/* ✅ NORMALIZE ALL images inside service cards */
+.service-card img{
   width: 100%;
-  border-radius: 8px;
+  height: 220px;          /* controls all image sizes */
+  object-fit: cover;      /* crops edges, never stretches */
+  border-radius: 10px;
+  display:block;
+  margin: 0 0 12px;
 }
-.image-pair {
-  display: grid;
+
+/* ✅ Two-image layout for “Custom Themes”
+   Wrap the two images in:
+   <div class="service-images"> ... </div> */
+.service-images{
+  display:grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
 }
 
-.image-pair img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+.service-images img{
+  height: 200px;          /* slightly shorter side-by-side */
+  margin: 0;              /* remove extra gaps inside the grid */
 }
 
-/* Stack on small screens */
-@media (max-width: 600px) {
-  .image-pair {
+/* Responsive */
+@media (max-width: 900px){
+  .services-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 768px){
+  .services-grid{ grid-template-columns: 1fr; }
+
+  .service-card img{
+    height: 180px;
+  }
+
+  .service-images{
     grid-template-columns: 1fr;
   }
 
-  .image-pair img {
-    height: 220px;
-  }
-}
-/* ===============================
-   FORCE CONSISTENT IMAGE SIZES
-   =============================== */
-
-/* All images inside service cards */
-.service-card img {
-  width: 100%;
-  height: 240px;          /* 🔑 controls image height */
-  object-fit: cover;      /* crops instead of stretching */
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-/* Two-image layout (Custom Themes) */
-.image-pair img {
-  height: 200px;          /* slightly shorter for side-by-side */
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-  .service-card img {
-    height: 220px;
-  }
-
-  .image-pair img {
-    height: 220px;
+  .service-images img{
+    height: 180px;
   }
 }
 
