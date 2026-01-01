@@ -250,6 +250,58 @@ a:active{
     height: 220px;
   }
 }
+/* =========================
+   HEADER LOGO LAYOUT
+   ========================= */
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Brand container */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Logo image */
+.logo {
+  height: 60px;           /* 🔑 controls logo size */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Text beside logo */
+.brand-text h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--white);
+}
+
+.brand-text .tagline {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #d7e2dc;
+}
+
+/* Responsive tweak */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    height: 50px;
+  }
+}
+
 
 
 
