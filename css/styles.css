@@ -272,11 +272,21 @@ a:active{
 
 /* Logo image */
 .logo {
-  height: 60px;           /* 🔑 controls logo size */
+  height: 85px;                 /* ⬅️ larger, more visible */
   width: auto;
   object-fit: contain;
-}
 
+  /* ✨ Soft gold glow */
+  filter: drop-shadow(0 0 6px rgba(201, 162, 39, 0.45))
+          drop-shadow(0 0 14px rgba(201, 162, 39, 0.25));
+
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.logo:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.65))
+          drop-shadow(0 0 20px rgba(201, 162, 39, 0.35));
+}
 /* Text beside logo */
 .brand-text h1 {
   margin: 0;
@@ -301,6 +311,7 @@ a:active{
     height: 50px;
   }
 }
+
 
 
 
