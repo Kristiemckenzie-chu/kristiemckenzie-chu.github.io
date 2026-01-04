@@ -311,6 +311,16 @@ a:active{
     height: 50px;
   }
 }
+.logo-link {
+  display: inline-block;
+}
+
+.logo-link:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+
 
 
 
