@@ -238,13 +238,15 @@ a:active{
 
 .hero{
   background-color: var(--black);
-  background-image: url("../images/logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 420px auto; /* controls logo size */
-  height: 70vh;
-  min-height: 420px;
+  height: 60vh;
+  min-height: 360px;
   position: relative;
+}
+.hero-overlay{
+  background: rgba(0,0,0,0.65);
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 /* Mobile adjustment */
@@ -323,6 +325,7 @@ a:active{
   outline-offset: 4px;
   border-radius: 10px;
 }
+
 
 
 
